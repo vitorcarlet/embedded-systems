@@ -1,4 +1,7 @@
-int brilho;
+// 1 - Faça um sistema com dois botões e três leds, 
+// o primeiro deve aumentar a quantidade de leds acesos 
+// e o segundo deve diminuir a quantidade de leds acesos. 
+
 const int ledPins[] = {13, 12, 11, 10}; // 4 LEDs
 const int buttonUp = 5;
 const int buttonDown = 4;
