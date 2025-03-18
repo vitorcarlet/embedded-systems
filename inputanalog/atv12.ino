@@ -46,3 +46,35 @@ void loop() {
 
   delay(50);  // Pequeno delay para estabilizar a leitura
 }
+
+
+//
+
+int brilho;
+const int pot1 = A0;
+const int led1 = 13;
+const int button = 5;
+
+void setup(){
+	pinMode(led1,OUTPUT);
+  	pinMode(button,INPUT_PULLUP);
+  
+}
+
+void loop(){
+ // bool botaoPressionado = digitalRead(button) == LOW;
+  if(digitalRead(button) == LOW){
+    int valorAnalogico = analogRead(pot1);
+    int numPiscadas = map(valorAnalogico,0,1023,0,20);
+    for(int i=0; i < numPiscadas; i++){
+      digitalWrite(led1,HIGH);
+      delay(200);
+      digitalWrite(led1,LOW);
+       delay(200);
+    }
+  }
+  delay(200);
+  
+ // botao
+
+}
