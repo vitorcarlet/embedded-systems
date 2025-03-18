@@ -1,3 +1,7 @@
+// 3- Ao pressionar: 
+// - botão 2 os leds devem "correr" em um sentido.
+// - botão 3 os leds devem "correr em sentido contrario.
+
 const int ledPins[] = {13, 12, 11};
 const int buttonUp = 2;
 const int buttonDown = 3;

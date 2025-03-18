@@ -1,3 +1,8 @@
+// 2- (não precisa fazer) Faça um sistema com 2 leds e 2 botões.
+// Ao pressionar qualquer dos botões, o LED 13 deve ligar.
+// Ao pressionar os dois botões juntos, 
+// os dois leds devem ligar.
+
 const int ledPins[] = {13, 12}; // LEDs nos pinos 13 e 12
 const int buttonUp = 2;  // Botão 1
 const int buttonDown = 3; // Botão 2
